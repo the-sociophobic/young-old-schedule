@@ -1,0 +1,55 @@
+@import '~bootstrap/scss/bootstrap.scss'
+
+
+$background: #dff4ef
+$orange: #fea483
+$green: #6bc9b7
+$dark: #212121
+
+
+h2.h2
+  @extend .text-center
+  font-weight: bold
+
+.App
+  width: 100%
+  background-color: $background
+  *
+    font-family: 'Gilroy'
+    color: $dark
+  &__day
+    background-color: white
+    box-shadow: 10px 10px 30px 0px rgba(140,138,138,0.3)
+    @extend .px-4
+    @extend .py-4
+    margin-top: 75px
+    &__date
+      margin-top: -85px
+      color: $green
+      font-size: 75px
+      font-weight: bold
+    &__time
+      font-size: 20px
+      font-weight: bold
+    &__place
+      color: $orange
+      font-size: 20px
+    &__title
+      font-weight: bold
+      font-size: 25px
+      @extend .mb-2
+    &__text
+      font-size: 20px
+      @extend .mb-5
+    &__avatar
+      width: 75px
+      height: 75px
+      border-radius: 55px
+      background-image: url("https://thumb.tildacdn.com/tild3130-3437-4436-a639-366333326165/-/cover/140x140/center/center/-/format/webp/sq.jpg")
+      background-position: center
+      background-repeat: no-repeat
+      background-size: 100%
+      @extend .mr-2
+    &__avatar-text
+      font-weight: bold
+      width: 50%
