@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/young-old-schedule/static/css/main.eb0c68bc.chunk.css",
-    "main.js": "/young-old-schedule/static/js/main.e77b947d.chunk.js",
-    "main.js.map": "/young-old-schedule/static/js/main.e77b947d.chunk.js.map",
+    "main.css": "/young-old-schedule/static/css/main.8ae6eb2d.chunk.css",
+    "main.js": "/young-old-schedule/static/js/main.8e447a77.chunk.js",
+    "main.js.map": "/young-old-schedule/static/js/main.8e447a77.chunk.js.map",
     "runtime-main.js": "/young-old-schedule/static/js/runtime-main.82a765d2.js",
     "runtime-main.js.map": "/young-old-schedule/static/js/runtime-main.82a765d2.js.map",
     "static/js/2.b1dc9e1d.chunk.js": "/young-old-schedule/static/js/2.b1dc9e1d.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.12ba9f1c.chunk.js": "/young-old-schedule/static/js/3.12ba9f1c.chunk.js",
     "static/js/3.12ba9f1c.chunk.js.map": "/young-old-schedule/static/js/3.12ba9f1c.chunk.js.map",
     "index.html": "/young-old-schedule/index.html",
-    "static/css/main.eb0c68bc.chunk.css.map": "/young-old-schedule/static/css/main.eb0c68bc.chunk.css.map",
+    "static/css/main.8ae6eb2d.chunk.css.map": "/young-old-schedule/static/css/main.8ae6eb2d.chunk.css.map",
     "static/js/2.b1dc9e1d.chunk.js.LICENSE.txt": "/young-old-schedule/static/js/2.b1dc9e1d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.82a765d2.js",
     "static/js/2.b1dc9e1d.chunk.js",
-    "static/css/main.eb0c68bc.chunk.css",
-    "static/js/main.e77b947d.chunk.js"
+    "static/css/main.8ae6eb2d.chunk.css",
+    "static/js/main.8e447a77.chunk.js"
   ]
 }
