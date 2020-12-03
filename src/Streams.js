@@ -10,15 +10,16 @@ import {
   differenceInSeconds
 } from 'date-fns'
 
-import countable from './countable'
-import clockLike from './clockLike'
+import countable from 'utils/countable'
+import clockLike from 'utils/clockLike'
+import Video from 'components/Video'
 
 
 const videos = [
   {
     date: 1,
     time: "16:00-17:30",
-    // link: "f",
+    link: "//ok.ru/videoembed/2311164536272",
     title: "Сообщества – это новый чёрный?",
     place: "Площадка",
   },
@@ -81,7 +82,8 @@ class Item  extends React.Component {
   render = () =>
     <div
       key={this.props.date}
-      className={`streams__item ${this.props.link && "streams__item--active"}`}
+      // className={`streams__item ${this.props.link && "streams__item--active"}`}
+      className="streams__item"
     >
       <div className="streams__item__upper">
         <div className="streams__item__upper__date">
@@ -93,35 +95,41 @@ class Item  extends React.Component {
       </div>
 
       <div className="streams__item__video">
-        <div className="streams__item__video__time">
-          {this.props.time}
-        </div>
-        <div className="streams__item__video__place">
-          {this.props.place}
-        </div>
-
-        <div className="streams__item__video__button">
-          СМОТРЕТЬ
-        </div>
-
-        <div className="streams__item__video__time-left">
-          До эфира осталось
-        </div>
-        <div className="streams__item__video__loader" />
-        <div className="streams__item__video__countdown">
-          {["days", "hours", "minutes", "seconds"].map(number =>
-            <div className={`streams__item__video__countdown__number streams__item__video__countdown__number--${number}`}>
-              {this.state[number]}
-              <div className="streams__item__video__countdown__number__desc">
-                {this.state[`${number}Desc`]}
-              </div>
+        {this.props.link ?
+          <Video src={this.props.link} />
+          :
+          <>
+            <div className="streams__item__video__time">
+              {this.props.time}
             </div>
-          ).reduce((a, b) =>
-            <>
-              {a}<div className="streams__item__video__countdown__colon">:</div>{b}
-            </>
-          )}
-        </div>
+            <div className="streams__item__video__place">
+              {this.props.place}
+            </div>
+
+            <div className="streams__item__video__button">
+              СМОТРЕТЬ
+            </div>
+
+            <div className="streams__item__video__time-left">
+              До эфира осталось
+            </div>
+            <div className="streams__item__video__loader" />
+            <div className="streams__item__video__countdown">
+              {["days", "hours", "minutes", "seconds"].map(number =>
+                <div className={`streams__item__video__countdown__number streams__item__video__countdown__number--${number}`}>
+                  {this.state[number]}
+                  <div className="streams__item__video__countdown__number__desc">
+                    {this.state[`${number}Desc`]}
+                  </div>
+                </div>
+              ).reduce((a, b) =>
+                <>
+                  {a}<div className="streams__item__video__countdown__colon">:</div>{b}
+                </>
+              )}
+            </div>
+          </>
+        }
       </div>
     </div>
 }

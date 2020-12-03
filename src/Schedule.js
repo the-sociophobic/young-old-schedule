@@ -1,5 +1,7 @@
 import React from 'react'
 
+import ExternalLink from 'components/ExternalLink'
+
 
 const schedule = [
   {
@@ -33,6 +35,7 @@ const schedule = [
     title: "Мастерская добрососедства",
     text: "Онлайн-мастерская в Zoom, где вместе с экспертами мы будем учиться создавать и развивать сообщества",
     avatarText: "НЕОБХОДИМА ПРЕДВАРИТЕЛЬНАЯ РЕГИСТРАЦИЯ",
+    link: "https://festival-young-old.timepad.ru/event/1489973/",
   },
   {
     date: 5,
@@ -92,7 +95,9 @@ class Schedule extends React.Component {
             {day.time}
           </div>
           <div className="schedule__day__place">
-            {day.place}
+            <ExternalLink newTab to={day.link || "https://ok.ru/group/54921048293584"}>
+              {day.place}
+            </ExternalLink>
           </div>
         </div>
         <div className="schedule__day__title">
@@ -104,7 +109,9 @@ class Schedule extends React.Component {
         <div className="row justify-content-start align-items-center px-4">
           <div className="schedule__day__avatar" />
           <div className="schedule__day__avatar-text">
-            {day.avatarText}
+            <ExternalLink newTab to={day.link || "https://ok.ru/group/54921048293584"}>
+              {day.avatarText}
+            </ExternalLink>
           </div>
         </div>
       </div>

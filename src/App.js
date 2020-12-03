@@ -3,7 +3,7 @@ import React from 'react'
 import Schedule from './Schedule'
 import Streams from './Streams'
 
-import './index.sass'
+import 'styles/index.sass'
 
 
 class App extends React.Component {
