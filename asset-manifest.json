@@ -1,22 +1,28 @@
 {
   "files": {
-    "main.css": "/young-old-schedule/static/css/main.47985d19.chunk.css",
-    "main.js": "/young-old-schedule/static/js/main.dc316d74.chunk.js",
-    "main.js.map": "/young-old-schedule/static/js/main.dc316d74.chunk.js.map",
+    "main.css": "/young-old-schedule/static/css/main.46423296.chunk.css",
+    "main.js": "/young-old-schedule/static/js/main.a127ef89.chunk.js",
+    "main.js.map": "/young-old-schedule/static/js/main.a127ef89.chunk.js.map",
     "runtime-main.js": "/young-old-schedule/static/js/runtime-main.82a765d2.js",
     "runtime-main.js.map": "/young-old-schedule/static/js/runtime-main.82a765d2.js.map",
-    "static/js/2.177a87cb.chunk.js": "/young-old-schedule/static/js/2.177a87cb.chunk.js",
-    "static/js/2.177a87cb.chunk.js.map": "/young-old-schedule/static/js/2.177a87cb.chunk.js.map",
+    "static/js/2.835b2785.chunk.js": "/young-old-schedule/static/js/2.835b2785.chunk.js",
+    "static/js/2.835b2785.chunk.js.map": "/young-old-schedule/static/js/2.835b2785.chunk.js.map",
     "static/js/3.12ba9f1c.chunk.js": "/young-old-schedule/static/js/3.12ba9f1c.chunk.js",
     "static/js/3.12ba9f1c.chunk.js.map": "/young-old-schedule/static/js/3.12ba9f1c.chunk.js.map",
     "index.html": "/young-old-schedule/index.html",
-    "static/css/main.47985d19.chunk.css.map": "/young-old-schedule/static/css/main.47985d19.chunk.css.map",
-    "static/js/2.177a87cb.chunk.js.LICENSE.txt": "/young-old-schedule/static/js/2.177a87cb.chunk.js.LICENSE.txt"
+    "static/css/main.46423296.chunk.css.map": "/young-old-schedule/static/css/main.46423296.chunk.css.map",
+    "static/js/2.835b2785.chunk.js.LICENSE.txt": "/young-old-schedule/static/js/2.835b2785.chunk.js.LICENSE.txt",
+    "static/media/Практики_общественной_заботы_Российский_опыт.003d402c.png": "/young-old-schedule/static/media/Практики_общественной_заботы_Российский_опыт.003d402c.png",
+    "static/media/Прямой_эфир_с_Валерием_Басаем,_проект_«Дорогами_добра».fb77f6bc.png": "/young-old-schedule/static/media/Прямой_эфир_с_Валерием_Басаем,_проект_«Дорогами_добра».fb77f6bc.png",
+    "static/media/Прямой_эфир_с_Людмилой_Захаровой,_еврейский_общинный_центр_«Хесед.7dfd7d7c.png": "/young-old-schedule/static/media/Прямой_эфир_с_Людмилой_Захаровой,_еврейский_общинный_центр_«Хесед.7dfd7d7c.png",
+    "static/media/Прямой_эфир_с_Людмилой_Кондрашиной,_ТОС_«Высота».cd6e2f59.png": "/young-old-schedule/static/media/Прямой_эфир_с_Людмилой_Кондрашиной,_ТОС_«Высота».cd6e2f59.png",
+    "static/media/Прямой_эфир_с_Татьяной_Кононыгиной,_проект_«Телефонные_цепи».10bdadbe.png": "/young-old-schedule/static/media/Прямой_эфир_с_Татьяной_Кононыгиной,_проект_«Телефонные_цепи».10bdadbe.png",
+    "static/media/сообщество.6a26cc42.png": "/young-old-schedule/static/media/сообщество.6a26cc42.png"
   },
   "entrypoints": [
     "static/js/runtime-main.82a765d2.js",
-    "static/js/2.177a87cb.chunk.js",
-    "static/css/main.47985d19.chunk.css",
-    "static/js/main.dc316d74.chunk.js"
+    "static/js/2.835b2785.chunk.js",
+    "static/css/main.46423296.chunk.css",
+    "static/js/main.a127ef89.chunk.js"
   ]
 }
