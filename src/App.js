@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Schedule from './Schedule'
-import Streams from './Streams'
+import Schedule from 'pages/Schedule'
+import Streams from 'pages/Streams'
 
 import 'styles/index.sass'
 

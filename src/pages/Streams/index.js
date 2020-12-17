@@ -14,6 +14,12 @@ import countable from 'utils/countable'
 import clockLike from 'utils/clockLike'
 import Video from 'components/Video'
 
+import cover0 from './covers/сообщество.png'
+import cover1 from './covers/Практики_общественной_заботы_Российский_опыт.png'
+import cover2 from './covers/Прямой_эфир_с_Татьяной_Кононыгиной,_проект_«Телефонные_цепи».png'
+import cover3 from './covers/Прямой_эфир_с_Людмилой_Захаровой,_еврейский_общинный_центр_«Хесед.png'
+import cover4 from './covers/Прямой_эфир_с_Валерием_Басаем,_проект_«Дорогами_добра».png'
+import cover5 from './covers/Прямой_эфир_с_Людмилой_Кондрашиной,_ТОС_«Высота».png'
 
 const videos = [
   {
@@ -22,6 +28,7 @@ const videos = [
     link: "//ok.ru/videoembed/2311164536272",
     title: "Сообщества – это новый чёрный?",
     place: "Одноклассники",
+    cover: cover0,
   },
   {
     date: 3,
@@ -29,6 +36,7 @@ const videos = [
     link: "//ok.ru/videoembed/2316177122768",
     title: "Комьюнити и практики заботы",
     place: "Площадка",
+    cover: cover1,
   },
   {
     date: 5,
@@ -43,11 +51,36 @@ const videos = [
     link: "//ok.ru/videoembed/2321840416208",
     title: "Прямой эфир с Татьяной Кононыгиной - Проект «Телефонные цепи»",
     place: "Одноклассники",
+    cover: cover2,
+  },
+  {
+    date: 6,
+    time: "16:00-17:30",
+    link: "//ok.ru/videoembed/2328238761424",
+    title: "Прямой эфир с Людмилой Захаровой, председателем Еврейского общинного культурного центра «Хесед-Тшува», Рязанская область",
+    place: "Одноклассники",
+    cover: cover3,
+  },
+  {
+    date: 7,
+    time: "16:00-17:30",
+    link: "//ok.ru/videoembed/2334079002064",
+    title: "Прямой эфир с Валерием Басаем, лидером общественной организации «Дорогами добра», Свердловская область",
+    place: "Одноклассники",
+    cover: cover4,
+  },
+  {
+    date: 8,
+    time: "16:00-17:30",
+    link: "//ok.ru/videoembed/2331230479824",
+    title: "Прямой эфир с Ириной Кондрашиной, лидером общественной организации «Высота», г. Волгоград",
+    place: "Одноклассники",
+    cover: cover5,
   },
   {
     date: 10,
     time: "11:30-13:30",
-    // link: "",
+    link: "//ok.ru/videoembed/2331636211408",
     title: "Паблик-ток «Могут ли маленькие сообщества решать большие проблемы?»",
     place: "Площадка",
   },
@@ -61,9 +94,10 @@ class Item  extends React.Component {
     this.state = {}
 
     this.date = new Date(`2020-12-${clockLike(props.date)}T${props.time.slice(0, 5)}:00`)
-
-    this.interval = setInterval(this.updateCountdown, 1000)
   }
+
+  componentDidMount = () =>
+    this.interval = setInterval(this.updateCountdown, 1000)
 
   updateCountdown = () => {
     var tmpCurrentDate = new Date()
@@ -110,7 +144,11 @@ class Item  extends React.Component {
 
       <div className="streams__item__video">
         {this.props.link ?
-          <Video src={this.props.link} />
+          <Video
+            src={this.props.link}
+            cover={this.props.cover}
+            title={this.props.link}
+          />
           :
           <>
             <div className="streams__item__video__time">
@@ -130,7 +168,10 @@ class Item  extends React.Component {
             <div className="streams__item__video__loader" />
             <div className="streams__item__video__countdown">
               {["days", "hours", "minutes", "seconds"].map(number =>
-                <div className={`streams__item__video__countdown__number streams__item__video__countdown__number--${number}`}>
+                <div
+                  key={number}
+                  className={`streams__item__video__countdown__number streams__item__video__countdown__number--${number}`}
+                >
                   {this.state[number]}
                   <div className="streams__item__video__countdown__number__desc">
                     {this.state[`${number}Desc`]}
@@ -159,7 +200,10 @@ class Streams extends React.Component {
               Прямые эфиры<br />и видео проекта
             </h1>
             {videos.map(item =>
-              <Item {...item} />
+              <Item
+                key={item.title}
+                {...item}
+              />
             )}
           </div>
         </div>
