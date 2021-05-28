@@ -11,8 +11,8 @@ class App extends React.Component {
   render = () => {
     return (
       <div className="App">
-        {/* <Schedule />
-        <Streams /> */}
+        {/* <Schedule /> */}
+        <Streams />
         <Videos2021 />
       </div>
     )
